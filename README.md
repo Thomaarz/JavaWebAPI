@@ -67,7 +67,7 @@ body.addContent(myDiv);
 
 
 // Get a balise with an ID (It will search an element with the id "myId" for each children of "htmlPage"
-WebElement myElement = htmlPage.getElementById("myId");
+WebElement myElement = htmlPage.getElementById("myP");
 
 // When a WebElement is created, he has an unique id, so you can also retrieve an element by this id
 WebElement myElementById = htmlPage.getElementByUUID(10);
@@ -121,9 +121,10 @@ The html file will also automatically generate tabulations, etc...
     <link href="style/my_style.css">
 </head>
 <body>
-    <div style="background-color: red; font-size: 12px" id="myId" class="myFirstClass anotherClass">
-        <p id="myP">
-	    This is the text in the <p> !
+    <div id="myId">
+        <!-- This is a test ! -->
+        <p style="background-color: red; font-size: 12px" id="theNewId" class="myFirstClass anotherClass">
+            This is the new text !
         </p>
     </div>
 </body>
