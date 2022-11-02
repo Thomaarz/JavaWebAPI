@@ -2,7 +2,7 @@
 An easy java api to create html webpage.
 Required org.projectlombok dependency.
 
-<h1>Main Class & Generate Default Page</h1>
+<h1>I) Main Class & Generate Default Page</h1>
 
 
 ```java
@@ -25,8 +25,8 @@ public class Main {
 }
 ```
 
-<h1>Usefull Methods & Result</h1>
-<h2>Usefull Methods</h2>
+<h1>II) Usefull Methods & Result</h1>
+<h2>  Usefull Methods</h2>
 
 ```java
 // Your HTMLPage Object
@@ -71,4 +71,4 @@ myElement.addIdentifier("style", "background-color: red; font-size: 12px");
 
 ```
 
-<h2>Result</h2>
+<h2>  Result</h2>
