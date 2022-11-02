@@ -67,7 +67,7 @@ body.addContent(myDiv);
 // Get a balise with an ID (It will search an element with the id "myId" for each children of "htmlPage"
 WebElement myElement = htmlPage.getElementById("myId");
 
-// When a WebElement is created, he has a unique id, so you can also retrieve an element by this id
+// When a WebElement is created, he has an unique id, so you can also retrieve an element by this id
 WebElement myElement = htmlPage.getElementByUUID(10);
 
 // You can now get all children of your element
