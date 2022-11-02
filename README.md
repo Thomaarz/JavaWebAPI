@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
     
-        // Create the default page (with head, body)
+        // Create the default page with selected language
         HTMLPage htmlPage = new HTMLPage("en");
         
         // Create the directories
@@ -25,32 +25,33 @@ public class Main {
 }
 ```
 
-<h1>Default Page</h1>
+<h1>Usefull Methods</h1>
+
 
 ```java
-    // Create the default page (with head, body)
-    HTMLPage htmlPage = new HTMLPage("en");
+// Your HTMLPage Object
+HTMLPage htmlPage;
         
-    // Get the head balise
-    WebElement head = htmlPage.getHead();
+// Get the head balise
+WebElement head = htmlPage.getHead();
 
-    // Get the body balise
-    WebElement body = htmlPage.getBody();
+// Get the body balise
+WebElement body = htmlPage.getBody();
         
-    
-        body.addContent(
-                new ContainerDiv()
-                .addContent(
-                        new ContainerDiv()
-                        .addContent(
-                                new ContainerP("eu")
-                        )
-                )
-        );
+   
+// Create a <div>
+WebElement myDiv = new ContainerDiv()
+        .addIdentifier(WebIdentifiers.ID, "myId");
+        
+// Create a <p>
+WebElement myP = new ContainerP("This is the text in the <p> !")
+        .addIdentifier(WebIdentifiers.ID, "myP");
+        
+        
+// Add myP in myDiv
+myDiv.addContent(myP);
 
-        ExporterUtils.initDirectories();
-        ExporterUtils.initFiles();
-        ExporterUtils.createFile(htmlPage);
-    }
-}
+// Add myDiv in body
+body.addContent(myDiv);
+
 ```
