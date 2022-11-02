@@ -76,7 +76,7 @@ List<WebElement> elements = myElement.getContents();
 // You can also edit the content of your element
 myElement.setContentMessage("This is the new text !");
 
-// You can add Identifiers
+// You can add Identifiers to your element
 myElement.addIdentifier("id", "theNewId");
 myElement.addIdentifier("class", "myFirstClass anotherClass");
 myElement.addIdentifier("style", "background-color: red; font-size: 12px");
