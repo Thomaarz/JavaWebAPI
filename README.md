@@ -72,7 +72,11 @@ myElement.addIdentifier("style", "background-color: red; font-size: 12px");
 ```
 
 <h2>Result</h2>
-The result will automatically format the file with tabulations.
+
+The result will automatically generate this files.
+![image](https://user-images.githubusercontent.com/49363524/199590378-173e5574-fc0a-4bf2-b989-08fde8a6d9db.png)
+
+The html file will also automatically generate tabulations, etc...
 
 ```html
 <!DOCTYPE html>
