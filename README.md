@@ -68,7 +68,7 @@ body.addContent(myDiv);
 WebElement myElement = htmlPage.getElementById("myId");
 
 // When a WebElement is created, he has an unique id, so you can also retrieve an element by this id
-WebElement myElement = htmlPage.getElementByUUID(10);
+WebElement myElementById = htmlPage.getElementByUUID(10);
 
 // You can now get all children of your element
 List<WebElement> elements = myElement.getContents();
