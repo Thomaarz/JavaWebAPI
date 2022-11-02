@@ -32,30 +32,24 @@ public class ExporterUtils {
         }
     }
 
-    public static void initFiles() {
-        List<File> files = new ArrayList<>();
-
-        File index = new File(EXPORT_PATH + "index.html");
-
-        files.add(index);
-
-        for (File file : files) {
-            if (!file.exists()) {
-                try {
-                    file.createNewFile();
-                    System.out.println(INFO + " Created " + file.getName() + " file !");
-                } catch (IOException e) {
-                    System.out.println(INFO + " " + file.getName() + " already exist");
-                }
-            }
-        }
+    public static void createFile(HTMLPage htmlPage) {
+        createFile(htmlPage, "index.html");
     }
 
-    public static void createFile(HTMLPage htmlPage) {
+    public static void createFile(HTMLPage htmlPage, String fileName) {
+        File file = new File(EXPORT_PATH + fileName);
 
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+                System.out.println(INFO + " Created " + file.getName() + " file !");
+            } catch (IOException e) {
+                System.out.println(INFO + " " + file.getName() + " already exist");
+            }
+        }
 
         try {
-            FileWriter fileWriter = new FileWriter(EXPORT_PATH + "index.html");
+            FileWriter fileWriter = new FileWriter(file);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
             String text = htmlPage.toString();
