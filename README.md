@@ -35,6 +35,10 @@ public class Main {
 ```java
 // Your HTMLPage Object
 HTMLPage htmlPage;
+
+// Get & Update the title of the page
+WebElement title = htmlPage.getTitle();
+title.setContentMessage("My WebSite !");
         
 // Get the head balise
 WebElement head = htmlPage.getHead();
@@ -114,7 +118,7 @@ The html file will also automatically generate tabulations, etc...
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	
     <!-- Infos -->
-    <title>Title</title>
+    <title>My WebSite !</title>
 	
     <!-- Links -->
     <link href="style/my_style.css">
