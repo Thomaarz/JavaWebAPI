@@ -72,6 +72,7 @@ myElement.addIdentifier("style", "background-color: red; font-size: 12px");
 ```
 
 <h2>Result</h2>
+The result will automatically format the file with tabulations.
 
 ```html
 <!DOCTYPE html>
