@@ -85,7 +85,7 @@ myElement.addIdentifier("style", "background-color: red; font-size: 12px");
 
 // You can add some events to your element
 // If you click on your element, this will execute this method
-element.addEvent(EventType.CLICK, new WebEvent() {
+myElement.addEvent(EventType.CLICK, new WebEvent() {
     @Override
     public void action(WebElement element) {
     
