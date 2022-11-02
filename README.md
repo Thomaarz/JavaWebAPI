@@ -19,9 +19,12 @@ public class Main {
         // Generate the index.html file based on htmlPage value (Call this method after editing htmlPage object)
         ExporterUtils.createFile(htmlPage);
 	
-	// You can also use this method to create another html file with custom name/path
-	// /!\ You have to create the path before
-	ExporterUtils.createFile(htmlPage, "myFolder/myFile.html);
+	// You can also create another html file with custom name/path
+	String path = "test/test.html";
+	// /!\ The file will always be created in "export/website/" + your path 
+	// /!\ The folders have to be created before
+	ExporterUtils.createFile(htmlPage, path);
+	// In this case, the output path will be "export/website/test/test.html"
     }
 }
 ```
