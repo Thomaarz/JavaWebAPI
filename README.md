@@ -2,7 +2,7 @@
 An easy java api to create html webpage.
 Required org.projectlombok dependency.
 
-<h1>Main Page & Default Page</h1>
+<h1>Main Class & Generate Default Page</h1>
 
 
 ```java
