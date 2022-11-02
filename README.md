@@ -79,7 +79,6 @@ List<WebElement> elements = myElement.getContents();
 myElement.setContentMessage("This is the new text !");
 
 // You can add Identifiers to your element
-myElement.addIdentifier("id", "theNewId");
 myElement.addIdentifier("class", "myFirstClass anotherClass");
 myElement.addIdentifier("style", "background-color: red; font-size: 12px");
 
@@ -123,7 +122,7 @@ The html file will also automatically generate tabulations, etc...
 <body>
     <div id="myId">
         <!-- This is a test ! -->
-        <p style="background-color: red; font-size: 12px" id="theNewId" class="myFirstClass anotherClass">
+        <p style="background-color: red; font-size: 12px" id="myP" class="myFirstClass anotherClass">
             This is the new text !
         </p>
     </div>
