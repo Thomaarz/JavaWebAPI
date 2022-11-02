@@ -26,7 +26,7 @@ public class Main {
 ```
 
 <h1>II) Usefull Methods & Result</h1>
-<h2>  Usefull Methods</h2>
+<h2>Usefull Methods</h2>
 
 ```java
 // Your HTMLPage Object
@@ -71,4 +71,29 @@ myElement.addIdentifier("style", "background-color: red; font-size: 12px");
 
 ```
 
-<h2>  Result</h2>
+<h2>Result</h2>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<!-- Infos -->
+	<title>Title</title>
+	
+	<!-- Links -->
+	<link href="style/my_style.css">
+</head>
+<body>
+	<div style="background-color: red; font-size: 12px" id="myId" class="myFirstClass anotherClass">
+		<p id="myP">
+			This is the text in the <p> !
+		</p>
+	</div>
+</body>
+</html>
+```
