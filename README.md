@@ -58,4 +58,15 @@ body.addContent(myDiv);
 // Get a balise with an ID (It will search an element withe the id "myId" for each children of "htmlPage"
 WebElement myElement = htmlPage.getElementById("myId");
 
+// You can now get all children of your element
+List<WebElement> elements = myElement.getContents();
+
+// You can also edit the content of your element
+myElement.setContentMessage("This is the new text !");
+
+// You can add Identifiers
+myElement.addIdentifier("id", "theNewId");
+myElement.addIdentifier("class", "myFirstClass anotherClass");
+myElement.addIdentifier("style", "background-color: red; font-size: 12px");
+
 ```
