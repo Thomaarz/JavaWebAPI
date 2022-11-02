@@ -81,6 +81,18 @@ myElement.addIdentifier("id", "theNewId");
 myElement.addIdentifier("class", "myFirstClass anotherClass");
 myElement.addIdentifier("style", "background-color: red; font-size: 12px");
 
+// You can add some events to your element
+// If you click on your element, this will execute this method
+element.addEvent(EventType.CLICK, new WebEvent() {
+    @Override
+    public void action(WebElement element) {
+    	// The element variable correspond to the clicked element
+        element.setContentMessage("You just clicked !");
+	
+	// Do some stuff...
+    }
+});
+
 ```
 
 <h2>Result</h2>
