@@ -50,13 +50,15 @@ WebElement myDiv = new ContainerDiv()
 // Create a <p> with id="myP"
 WebElement myP = new ContainerP("This is the text in the <p> !")
         .addIdentifier(WebIdentifiers.ID, "myP");
+	
+// Create a comment
+CustomCommentary comment = new CustomCommentary("This is a test !");
         
-        
-// Add myP in myDiv
-myDiv.addContent(myP);
+// Add comment and myP in myDiv
+myDiv.addContent(comment, myP);
 
 // Advice
-// You can also add several WebElement at the same time
+// You can add one or several WebElement at the same time
 // myDiv.addContent(element1, element2, ...);
 // You can do this to add few elements in a container for example.
 
