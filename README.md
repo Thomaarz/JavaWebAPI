@@ -43,11 +43,11 @@ WebElement head = htmlPage.getHead();
 WebElement body = htmlPage.getBody();
         
    
-// Create a <div>
+// Create a <div> with id="myDiv"
 WebElement myDiv = new ContainerDiv()
         .addIdentifier(WebIdentifiers.ID, "myId");
         
-// Create a <p>
+// Create a <p> with id="myP"
 WebElement myP = new ContainerP("This is the text in the <p> !")
         .addIdentifier(WebIdentifiers.ID, "myP");
         
