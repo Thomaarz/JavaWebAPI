@@ -25,8 +25,8 @@ public class Main {
 }
 ```
 
-<h1>Usefull Methods</h1>
-
+<h1>Usefull Methods & Result</h1>
+<h2>Usefull Methods</h2>
 
 ```java
 // Your HTMLPage Object
@@ -70,3 +70,5 @@ myElement.addIdentifier("class", "myFirstClass anotherClass");
 myElement.addIdentifier("style", "background-color: red; font-size: 12px");
 
 ```
+
+<h2>Result</h2>
