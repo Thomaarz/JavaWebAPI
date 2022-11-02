@@ -64,7 +64,7 @@ myDiv.addContent(myP);
 body.addContent(myDiv);
 
 
-// Get a balise with an ID (It will search an element withe the id "myId" for each children of "htmlPage"
+// Get a balise with an ID (It will search an element with the id "myId" for each children of "htmlPage"
 WebElement myElement = htmlPage.getElementById("myId");
 
 // You can now get all children of your element
