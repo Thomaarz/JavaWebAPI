@@ -73,7 +73,7 @@ myElement.addIdentifier("style", "background-color: red; font-size: 12px");
 
 <h2>Result</h2>
 
-The result will automatically generate this files.
+The result will automatically generate the following directories and files:
 
 ![image](https://user-images.githubusercontent.com/49363524/199590883-c2c422d0-de88-4b11-929e-b6477802f3aa.png)
 
