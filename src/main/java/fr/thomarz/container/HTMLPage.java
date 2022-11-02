@@ -12,12 +12,15 @@ import lombok.Getter;
 public class HTMLPage extends WebElement {
 
     private WebElement head;
-
     private WebElement body;
+
+    private InlineTitle title;
 
     public HTMLPage(String lang) {
         super("html");
         getWebIdentifier().addParameter("lang", lang);
+
+        title = new InlineTitle("Title");
 
         head = new ContainerBalise("head")
                 .addContent(
@@ -27,7 +30,7 @@ public class HTMLPage extends WebElement {
                         new OrphanMeta("name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\""),
                         new CustomJump(),
                         new CustomCommentary("Infos"),
-                        new InlineTitle("Title"),
+                        title,
                         new CustomJump(),
                         new CustomCommentary("Links"),
                         new OrphanLink("style/my_style.css")

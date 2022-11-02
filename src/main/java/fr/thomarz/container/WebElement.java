@@ -27,6 +27,8 @@ public abstract class WebElement {
     public WebElement(String name, String contentMessage) {
         this(name);
         this.contentMessage = contentMessage;
+        this.webIdentifier = new WebIdentifier();
+        webIdentifier.addParameter(WebIdentifiers.ID, String.valueOf(uuid));
     }
 
     public WebElement(String name) {
@@ -36,6 +38,7 @@ public abstract class WebElement {
         this.contentMessage = null;
         this.contents = new ArrayList<>();
         this.webIdentifier = new WebIdentifier();
+        webIdentifier.addParameter(WebIdentifiers.ID, String.valueOf(uuid));
     }
 
     public WebElement removeContent(WebElement webElement) {
@@ -46,6 +49,18 @@ public abstract class WebElement {
         for (WebElement children : contents) {
             children.removeContent(webElement);
         }
+        return this;
+    }
+
+    public WebElement addContentBefore(WebElement after, WebElement webElement) {
+        int index = contents.indexOf(after);
+        addContent(index, webElement);
+        return this;
+    }
+
+    public WebElement addContentAfter(WebElement after, WebElement webElement) {
+        int index = contents.indexOf(after) + 1;
+        addContent(index, webElement);
         return this;
     }
 
@@ -141,5 +156,13 @@ public abstract class WebElement {
         return !(content.getName() != null &&
                 (content.getName().equalsIgnoreCase("head") || content.getName().equalsIgnoreCase("body"))
         );
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof WebElement)) {
+            return false;
+        }
+        return uuid == ((WebElement) o).getUuid();
     }
 }
