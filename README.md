@@ -74,7 +74,9 @@ myElement.addIdentifier("style", "background-color: red; font-size: 12px");
 <h2>Result</h2>
 
 The result will automatically generate this files.
-![image](https://user-images.githubusercontent.com/49363524/199590378-173e5574-fc0a-4bf2-b989-08fde8a6d9db.png)
+
+![image](https://user-images.githubusercontent.com/49363524/199590883-c2c422d0-de88-4b11-929e-b6477802f3aa.png)
+
 
 The html file will also automatically generate tabulations, etc...
 
