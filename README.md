@@ -51,6 +51,11 @@ WebElement myP = new ContainerP("This is the text in the <p> !")
 // Add myP in myDiv
 myDiv.addContent(myP);
 
+// Advice
+// You can also add several WebElement at the same time
+// myDiv.addContent(element1, element2, ...);
+// You can do this to add few elements in a container for example.
+
 // Add myDiv in body
 body.addContent(myDiv);
 
