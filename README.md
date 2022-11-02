@@ -86,10 +86,9 @@ myElement.addIdentifier("style", "background-color: red; font-size: 12px");
 element.addEvent(EventType.CLICK, new WebEvent() {
     @Override
     public void action(WebElement element) {
-    	// The element variable correspond to the clicked element
+    
+    	// Do some stuff...
         element.setContentMessage("You just clicked !");
-	
-	// Do some stuff...
     }
 });
 
@@ -108,23 +107,23 @@ The html file will also automatically generate tabulations, etc...
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Meta -->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	
-	<!-- Infos -->
-	<title>Title</title>
+    <!-- Infos -->
+    <title>Title</title>
 	
-	<!-- Links -->
-	<link href="style/my_style.css">
+    <!-- Links -->
+    <link href="style/my_style.css">
 </head>
 <body>
-	<div style="background-color: red; font-size: 12px" id="myId" class="myFirstClass anotherClass">
-		<p id="myP">
-			This is the text in the <p> !
-		</p>
-	</div>
+    <div style="background-color: red; font-size: 12px" id="myId" class="myFirstClass anotherClass">
+        <p id="myP">
+	    This is the text in the <p> !
+        </p>
+    </div>
 </body>
 </html>
 ```
