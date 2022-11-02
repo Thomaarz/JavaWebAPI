@@ -27,8 +27,6 @@ public abstract class WebElement {
     public WebElement(String name, String contentMessage) {
         this(name);
         this.contentMessage = contentMessage;
-        this.webIdentifier = new WebIdentifier();
-        webIdentifier.addParameter(WebIdentifiers.ID, String.valueOf(uuid));
     }
 
     public WebElement(String name) {
@@ -38,7 +36,6 @@ public abstract class WebElement {
         this.contentMessage = null;
         this.contents = new ArrayList<>();
         this.webIdentifier = new WebIdentifier();
-        webIdentifier.addParameter(WebIdentifiers.ID, String.valueOf(uuid));
     }
 
     public WebElement removeContent(WebElement webElement) {
