@@ -16,11 +16,12 @@ public class Main {
         // Create the directories
         ExporterUtils.initDirectories();
         
-        // Create the files
-        ExporterUtils.initFiles();
-        
         // Generate the index.html file based on htmlPage value (Call this method after editing htmlPage object)
         ExporterUtils.createFile(htmlPage);
+	
+	// You can also use this method to create another html file with custom name/path
+	// /!\ You have to create the path before
+	ExporterUtils.createFile(htmlPage, "myFolder/myFile.html);
     }
 }
 ```
